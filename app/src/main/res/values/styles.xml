@@ -86,14 +86,7 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">@dimen/global_line_height</item>
     </style>
-    <style name="cell_useritem_container">
-        <item name="android:background">@drawable/bg_listselector</item>
-        <item name="android:paddingLeft">@dimen/user_list_cell_padding</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">60.0dip</item>
-        <item name="android:layout_marginBottom">@dimen/global_line_height</item>
-        <item name="android:minHeight">60.0dip</item>
-    </style>
+
     <style name="cell_useritem_username" parent="@style/wrap_wrap">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">@color/cell_userlist_username</item>
@@ -104,13 +97,7 @@
     <style name="cell_redpacket_useritem_username" parent="@style/cell_useritem_username">
         <item name="android:maxWidth">130.0dip</item>
     </style>
-    <style name="cell_useritem_gender_img">
-        <item name="android:layout_width">14.0sp</item>
-        <item name="android:layout_height">14.0sp</item>
-        <item name="android:layout_marginLeft">5.0dip</item>
-        <item name="android:src">@drawable/global_female</item>
-        <item name="android:minWidth">14.0sp</item>
-    </style>
+
     <style name="cell_useritem_level_img">
         <item name="android:layout_width">31.0sp</item>
         <item name="android:layout_height">14.0sp</item>
