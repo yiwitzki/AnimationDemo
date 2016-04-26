@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="100dp"
+        android:paddingBottom="50dp"
+        android:src="@drawable/car_one"/>
+    <ImageView
+        android:id="@+id/car_light_right"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/car_one_right_light"/>
+    <ImageView
+        android:id="@+id/car_light_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/car_one_left_light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/buttonLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/animation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="动画1_1" />
+    <Button
+        android:id="@+id/animation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="动画1_2" />
+    <Button
+        android:id="@+id/animation3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="动画2"
+        />
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonLinearLayout"
+        android:background="#fefefe">
+    <include
+        android:id="@+id/car_layout"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        layout="@layout/car_layout">
+    </include>
+
+    <include
+        android:id="@+id/giftSender1Info"
+        layout="@layout/animation1_user_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_layout"
+        android:visibility="invisible">
+    </include>
+
+        <include
+            android:id="@+id/giftSender2Info"
+            android:visibility="invisible"
+            layout="@layout/animation1_user_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/giftSender1Info">
+        </include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

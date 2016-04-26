@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimationComplex</string>
+    <string name="room_redpacket_tip">给您发来一个红包</string>
+    <string name="room_redpacket_best_luck">手气最佳</string>
+    <string name="room_redpacket_over">红包已被抢完</string>
+    <string name="room_redpacket_owner">%1$s的红包</string>
+    <string name="room_redpacket_no_content">没有人抢到红包</string>
+    <string name="room_redpacket_failure">抢红包失败</string>
+    <string name="room_redpacket_too_slow">手太慢，已发完</string>
+    <string name="room_redpacket_others_luck">看看大家的手气</string>
+    <string name="charge_value_default">0</string>
+    <string name="userhome_nickname_default">Garfield00</string>
+</resources>

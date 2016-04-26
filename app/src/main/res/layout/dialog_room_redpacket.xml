@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/redpacket_container"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@id/redpacket_info_container"
+        style="@style/redpacket_info_container"
+        android:background="@drawable/bg_room_red_packet_head"
+        android:paddingBottom="80.0dip">
+
+        <ImageView
+            android:id="@id/user_portrait"
+            android:layout_width="65.0dip"
+            android:layout_height="65.0dip"
+            android:layout_marginTop="60.0dip"
+            android:src="@drawable/outman"
+            />
+
+        <TextView
+            android:id="@id/txt_username"
+            style="@style/redpacket_tip_text"
+            android:layout_marginTop="6.0dip"
+            android:text="用户1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@id/txt_redpacket_tip"
+            style="@style/redpacket_tip_text"
+            android:layout_marginTop="3.0dip"
+            android:text="@string/room_redpacket_tip"
+            android:textColor="@color/room_red_packet_tip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/img_open"
+        style="@style/redpacket_img_open"
+        android:layout_below="@id/redpacket_info_container"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gift_qiang"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@id/progress_loading"
+        style="@style/redpacket_loading"
+        android:layout_below="@id/redpacket_info_container"
+        android:visibility="gone" />
+
+    <LinearLayout style="@style/redpacket_close_container">
+
+        <ImageView
+            android:id="@id/img_close"
+            style="@style/redpacket_close_img"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</RelativeLayout>
